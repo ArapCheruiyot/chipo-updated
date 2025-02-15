@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chips Mwitu Express | Fresh & Hot Fries Delivered!</title>
+    <meta name="description" content="Get freshly fried chips delivered hot to your location! Order via WhatsApp or call us.">
+    <meta name="keywords" content="Chips Mwitu, fries delivery, Nairobi food, best chips Kenya, M-Pesa order">
+    <meta name="author" content="Chips Mwitu Express">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="image" href="chips.webp">
+</head>
+<body>
+
+    <!-- Moving Background Text -->
+    <div id="moving-text-container" class="moving-text-container">
+        <div id="moving-text" class="moving-text">🚀 Fast Delivery | 🔥 Freshly Fried | 📍 Nairobi | Open 8 AM - Midnight</div>
+    </div>
+
+    <div class="layout">
+        <!-- Left Sidebar for Location -->
+        <aside id="location-sidebar" class="location-sidebar">
+            <h3>📍 Pin Your Location</h3>
+            <button id="pin-location-btn">📌 Pin My Location</button>
+            <p id="location-info">Your location will appear here...</p>
+        </aside>
+
+        <!-- Main Content -->
+        <main id="main-container" class="container">
+            <!-- Logo -->
+            <img id="logo" src="logo.webp" alt="Chips Mwitu Express Logo" class="logo">
+
+            <!-- Catchy Advert Text -->
+            <div id="advert-text" class="advert-text">🔥 Freshly Fried, Delivered Hot! 🚀</div>
+
+            <!-- Crispy Chips Image -->
+            <div id="image-container" class="image-container">
+                <img id="chips-image" src="chips.webp" alt="Freshly Fried Chips" loading="lazy">
+            </div>
+
+            <p>😋 <strong>Hot & crispy chips, straight from the fryer!</strong></p>
+            <p>📦 <strong>Price:</strong> KES 150 per pack</p>
+            <p>🚚 <strong>Free delivery</strong> within the region!</p>
+
+            <!-- Call-to-action Buttons -->
+            <div id="buttons-container" class="buttons">
+                <button id="order-btn" class="order-btn" disabled>📩 Order via WhatsApp</button>
+                <a id="call-btn" class="call-btn" href="tel:+254712345678">📞 Call Us</a>
+                <a id="mpesa-btn" class="mpesa-btn" href="#">💰 Pay via M-Pesa</a>
+            </div>
+
+            <!-- Order Form (Hidden Initially) -->
+            <div id="order-form" class="order-form" style="display: none;">
+                <h3>Complete Your Order</h3>
+                <label for="customer-name">Name:</label>
+                <input type="text" id="customer-name" placeholder="Enter your name">
+
+                <label for="customer-phone">Phone Number:</label>
+                <input type="tel" id="customer-phone" placeholder="Enter your phone number">
+
+                <p><strong>Pinned Location:</strong> <span id="order-location">Not pinned yet</span></p>
+
+                <button id="confirm-order">✅ Send Order via WhatsApp</button>
+            </div>
+
+            <!-- Contact Info -->
+            <div id="contact-info" class="contact">
+                📍 <strong>Land Mawe, Nairobi</strong><br>
+                📞 <strong>Call:</strong> +254 712 345 678  
+            </div>
+        </main>
+
+        <!-- Right Sidebar for Delivery Timeline -->
+        <aside id="delivery-timeline" class="delivery-timeline">
+            <h3>📦 Delivery Timeline</h3>
+            <div id="timeline" class="timeline">
+                <div id="timeline-item-1" class="timeline-item">
+                    <div class="timeline-box">1</div>
+                    <div class="time-slot">10:00 AM</div>
+                </div>
+                <div id="timeline-item-2" class="timeline-item">
+                    <div class="timeline-box">2</div>
+                    <div class="time-slot">10:45 AM</div>
+                </div>
+                <div id="timeline-item-3" class="timeline-item">
+                    <div class="timeline-box">3</div>
+                    <div class="time-slot">11:30 AM</div>
+                </div>
+                <div id="timeline-item-4" class="timeline-item">
+                    <div class="timeline-box">4</div>
+                    <div class="time-slot">12:15 PM</div>
+                </div>
+                <div id="timeline-item-5" class="timeline-item">
+                    <div class="timeline-box">5</div>
+                    <div class="time-slot">1:00 PM</div>
+                </div>
+                <div id="timeline-item-6" class="timeline-item">
+                    <div class="timeline-box">6</div>
+                    <div class="time-slot">1:45 PM</div>
+                </div>
+                <div id="timeline-item-7" class="timeline-item">
+                    <div class="timeline-box">7</div>
+                    <div class="time-slot">2:30 PM</div>
+                </div>
+                <div id="timeline-item-8" class="timeline-item">
+                    <div class="timeline-box">8</div>
+                    <div class="time-slot">3:15 PM</div>
+                </div>
+                <div id="timeline-item-9" class="timeline-item">
+                    <div class="timeline-box">9</div>
+                    <div class="time-slot">4:00 PM</div>
+                </div>
+                <div id="timeline-item-10" class="timeline-item">
+                    <div class="timeline-box">10</div>
+                    <div class="time-slot">4:45 PM</div>
+                </div>
+                <div id="timeline-item-11" class="timeline-item">
+                    <div class="timeline-box">11</div>
+                    <div class="time-slot">5:30 PM</div>
+                </div>
+                <div id="timeline-item-12" class="timeline-item">
+                    <div class="timeline-box">12</div>
+                    <div class="time-slot">6:15 PM</div>
+                </div>
+                <div id="timeline-item-13" class="timeline-item">
+                    <div class="timeline-box">13</div>
+                    <div class="time-slot">7:00 PM</div>
+                </div>
+                <div id="timeline-item-14" class="timeline-item">
+                    <div class="timeline-box">14</div>
+                    <div class="time-slot">7:45 PM</div>
+                </div>
+                <div id="timeline-item-15" class="timeline-item">
+                    <div class="timeline-box">15</div>
+                    <div class="time-slot">8:30 PM</div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Floating WhatsApp Chat -->
+    <a id="floating-whatsapp" href="https://wa.me/254114932232?text=Hi,%20I%20need%20assistance%20with%20my%20order." class="floating-whatsapp">💬</a>
+
+    <script defer src="app.js"></script>
+
+</body>
+</html>
